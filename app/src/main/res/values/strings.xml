@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">FOHOR MALAI</string>
+    <string name="description">A Waste Management App with the use of IoT</string>
+    <string name="schedule">PickUp Schedule</string>
+    <string name="notification">SMS Notification</string>
+    <string name="bin">SmartBin Implementation</string>
+    <string name="register">Register</string>
+    <string name="signIn">Sign In</string>
+    <string name="power">Powered by</string>
+    <string name="group_name">Clustered Concepts</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="phoneNumber">Mobile Number</string>
+    <string name="member">Already a member? |</string>
+    <string name="to_login">Please login here</string>
+    <string name="notMember">Not a member yet?</string>
+    <string name="to_register">Please register here</string>
+    <string name="get_start">Get Started</string>
+    <string name="new_user">I am new here</string>
+    <string name="old_user">I have an account</string>
+
+    <string-array name="State">
+        <item>Select your State...</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="Zone">
+        <item>Select your Zone...</item>
+        <item>Bagmati</item>
+        <item>Lumbini</item>
+        <item>Gandaki</item>
+    </string-array>
+
+    <string-array name="District">
+        <item>Select your District...</item>
+        <item>Kathmandu</item>
+        <item>Bhaktapur</item>
+        <item>lalitpur</item>
+    </string-array>
+
+    <string-array name="Municipality">
+        <item>Select your Municipality...</item>
+        <item>Madhyapur Thimi</item>
+        <item>Bhaktapur</item>
+        <item>Surya-Vinayak</item>
+        <item>ChanguNarayan</item>
+    </string-array>
+
+    <string-array name="WardNo">
+        <item>Select your Ward No...</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>
