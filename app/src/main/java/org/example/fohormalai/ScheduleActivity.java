@@ -1,11 +1,20 @@
 package org.example.fohormalai;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
+import org.example.fohormalai.Calender.CalendarActivity;
+import org.example.fohormalai.Calender.MainActivity_Calender;
+
 public class ScheduleActivity extends AppCompatActivity {
+
+    private Button btnviewschedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +51,17 @@ public class ScheduleActivity extends AppCompatActivity {
         adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);// Apply the adapter to the spinner
         spinner5.setAdapter(adapter5);
 
+        btnviewschedule = (Button) findViewById(R.id.btn_viewSchedule);
+
+
+        btnviewschedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("MainActivity_Calender"," Schedule Clicked ");
+                Intent intent = new Intent(ScheduleActivity.this,CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

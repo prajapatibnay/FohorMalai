@@ -64,4 +64,14 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+
+    <string name="text_with_paragraphs">
+                Our project is entitled “FOHOR MALAI”. Our software is basically related to waste management through the use of IoT. Waste management or waste disposal are all the activities and actions required to manage waste from its inception to its final disposal. This includes amongst other things collection, transport, treatment and disposal of waste together with monitoring and regulation.
+                Our software provides scheduling for the pickup of household waste materials which makes it easy for the users to optimize their valuable time. This software has a notification system which alerts the users about the time when the garbage truck is available for household waste pickup. Along with it, we have incorporated IoT (Internet of Things) which is a sensor attached to the dustbin, known as Smart Bin. This sensor provides the information about the status of the bin. When the bin is full, the information is sent to the system.
+              Objectives:
+                 •	To provide scheduling for the collection of household waste materials.
+                 •	To provide SMS notification about the waste collection time schedule.
+                 •	Resource mobilization
+                 •	To implement Smart Dustbin system using IoT
+    </string>
 </resources>

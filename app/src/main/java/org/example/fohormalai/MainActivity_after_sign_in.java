@@ -7,6 +7,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
+import org.example.fohormalai.Calender.CalendarActivity;
 import org.example.fohormalai.Models.Home;
 import org.example.fohormalai.utils.ItemOffsetDecoration;
 
@@ -25,8 +26,8 @@ public class MainActivity_after_sign_in extends AppCompatActivity {
                 Log.i("MainActivity"," home "+item.getName());
 
                 if(item.getName().equalsIgnoreCase("My schedule")){
-                    Intent in=new Intent(MainActivity_after_sign_in.this,ScheduleActivity.class);
-                    startActivity(in);
+                    Intent in1=new Intent(MainActivity_after_sign_in.this, CalendarActivity.class);
+                    startActivity(in1);
 
                 }
                 if(item.getName().equalsIgnoreCase("Notification")){
@@ -38,8 +39,9 @@ public class MainActivity_after_sign_in extends AppCompatActivity {
                 }
 
                 if(item.getName().equalsIgnoreCase("About us")){
-
-                }
+                    Intent in4=new Intent(MainActivity_after_sign_in.this,AboutUsActivity.class);
+                    startActivity(in4);
+                    }
 
                 if(item.getName().equalsIgnoreCase("Search")){
 
