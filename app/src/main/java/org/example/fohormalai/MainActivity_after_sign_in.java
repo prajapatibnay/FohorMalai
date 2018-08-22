@@ -11,7 +11,7 @@ import org.example.fohormalai.Calender.CalendarActivity;
 import org.example.fohormalai.Models.Home;
 import org.example.fohormalai.utils.ItemOffsetDecoration;
 
-public class MainActivity_after_sign_in extends AppCompatActivity {
+public class MainActivity_after_sign_in extends AppCompatActivity {gi
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity_after_sign_in extends AppCompatActivity {
                 Log.i("MainActivity"," home "+item.getName());
 
                 if(item.getName().equalsIgnoreCase("My schedule")){
-                    Intent in1=new Intent(MainActivity_after_sign_in.this, CalendarActivity.class);
+                    Intent in1=new Intent(MainActivity_after_sign_in.this, ScheduleActivity.class);
                     startActivity(in1);
 
                 }

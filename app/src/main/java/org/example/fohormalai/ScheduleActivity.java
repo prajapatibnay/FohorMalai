@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 import org.example.fohormalai.Calender.CalendarActivity;
-import org.example.fohormalai.Calender.MainActivity_Calender;
 
 public class ScheduleActivity extends AppCompatActivity {
 

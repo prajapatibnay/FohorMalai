@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,13 +8,46 @@
     tools:context=".Login">
 
     <TextView
-        android:id="@+id/about_us"
-        android:text="@string/text_with_paragraphs"
-        android:textSize="15dp"
+        android:text="Introduction"
+        android:textSize="10dp"
         android:textStyle="normal"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6166006"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:text="@string/text_with_paragraph1"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:gravity="left"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="3px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"/>
-</LinearLayout>
+
+    <TextView
+        android:text="Objectives"
+        android:textSize="10dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6166006"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:text="@string/text_with_paragraph2"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:gravity="left"
+        android:layout_marginTop="375dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
