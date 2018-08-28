@@ -35,12 +35,12 @@ public class Home {
 
     public static List<Home>getHomeList(){
         List<Home> obj = new ArrayList<Home>();
-        obj.add(new Home("My Schedule", R.mipmap.calendar_256));
-        obj.add(new Home("Notification", R.mipmap.bell_256));
-        obj.add(new Home("Notices", R.mipmap.notice_256));
-        obj.add(new Home("About us", R.mipmap.about_256));
-        obj.add(new Home("Search", R.mipmap.search_256));
-        obj.add(new Home("Better Recycler", R.mipmap.recycle_256));
+        obj.add(new Home("My Schedule", R.mipmap.calendar_64));
+        obj.add(new Home("Notification", R.mipmap.bell_64));
+        obj.add(new Home("Notices", R.mipmap.notice_64));
+        obj.add(new Home("About us", R.mipmap.about_64));
+        obj.add(new Home("Search", R.mipmap.search_64));
+        obj.add(new Home("Better Recycler", R.mipmap.recycle_64));
         return obj;
 
     }

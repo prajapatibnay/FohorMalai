@@ -1,9 +1,11 @@
 package org.example.fohormalai;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -21,10 +23,16 @@ public class Registration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_registration_v2);
+
+        // get action bar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Register");
+
+        // Enabling Up / Back navigation
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         et_login = (TextView)findViewById(R.id.toLogin);
-
         et_name = (EditText)findViewById(R.id.fullName);
         et_email = (EditText)findViewById(R.id.emailID);
         et_pass = (EditText)findViewById(R.id.password);
@@ -95,5 +103,15 @@ public class Registration extends AppCompatActivity {
         password = et_pass.getText().toString().trim();
         phone = et_phone.getText().toString().trim();
         Cpassword = et_confpass.getText().toString().trim();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

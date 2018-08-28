@@ -2,8 +2,10 @@ package org.example.fohormalai;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -15,6 +17,12 @@ public class MainActivity_Start extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main__start);
+        // get action bar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Welcome");
+
+        // Enabling Up / Back navigation
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         ImageView imageView = (ImageView) findViewById(R.id.app_logo);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
@@ -43,5 +51,15 @@ public class MainActivity_Start extends AppCompatActivity {
         };
         startThread.start();
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

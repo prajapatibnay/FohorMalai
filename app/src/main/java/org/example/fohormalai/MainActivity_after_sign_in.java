@@ -1,22 +1,32 @@
 package org.example.fohormalai;
 
+
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MenuItem;
 
 import org.example.fohormalai.Calender.CalendarActivity;
 import org.example.fohormalai.Models.Home;
 import org.example.fohormalai.utils.ItemOffsetDecoration;
 
-public class MainActivity_after_sign_in extends AppCompatActivity {gi
+public class MainActivity_after_sign_in extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_sign_in);
+
+        // get action bar
+            ActionBar actionBar = getSupportActionBar();
+            actionBar.setTitle("Home");
+
+        // Enabling Up / Back navigation
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
@@ -26,7 +36,7 @@ public class MainActivity_after_sign_in extends AppCompatActivity {gi
                 Log.i("MainActivity"," home "+item.getName());
 
                 if(item.getName().equalsIgnoreCase("My schedule")){
-                    Intent in1=new Intent(MainActivity_after_sign_in.this, ScheduleActivity.class);
+                    Intent in1=new Intent(MainActivity_after_sign_in.this,ScheduleActivity.class);
                     startActivity(in1);
 
                 }
@@ -48,7 +58,6 @@ public class MainActivity_after_sign_in extends AppCompatActivity {gi
                 }
 
                 if(item.getName().equalsIgnoreCase("Better Recycler")){
-
                 }
             }
         });
@@ -59,6 +68,16 @@ public class MainActivity_after_sign_in extends AppCompatActivity {gi
         Log.i("MainSecondActiviy","inside onCreate");
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 
