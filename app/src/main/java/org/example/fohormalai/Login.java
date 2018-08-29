@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.example.fohormalai.Navigation.Navigation;
+
 public class Login extends AppCompatActivity {
 
     private EditText et_email, et_password;
@@ -52,7 +54,7 @@ public class Login extends AppCompatActivity {
         btn_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent reg = new Intent(Login.this, MainActivity_after_sign_in.class);
+                Intent reg = new Intent(Login.this, Navigation.class);
                 startActivity(reg);
             }
         });

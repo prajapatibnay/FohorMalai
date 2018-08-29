@@ -7,8 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import org.example.fohormalai.Calender.CalendarActivity;
 import org.example.fohormalai.Models.Home;
@@ -20,6 +23,7 @@ public class MainActivity_after_sign_in extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_sign_in);
+
 
         // get action bar
             ActionBar actionBar = getSupportActionBar();

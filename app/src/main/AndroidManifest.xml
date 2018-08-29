@@ -23,6 +23,10 @@
         <activity android:name=".ScheduleActivity" />
         <activity android:name=".Calender.CalendarActivity" />
         <activity android:name=".AboutUsActivity" />
+        <activity
+            android:name=".Navigation.Navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/NoActionBar"></activity>
     </application>
 
 </manifest>

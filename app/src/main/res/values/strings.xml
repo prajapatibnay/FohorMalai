@@ -76,4 +76,12 @@
                  \u2022	Resource mobilization.\n
                  \u2022	To implement Smart Dustbin system using IoT.\n
     </string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Profile</string>
+    <string name="nav_header_subtitle">user@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_others">Others</string>
 </resources>

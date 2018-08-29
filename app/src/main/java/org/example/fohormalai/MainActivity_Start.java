@@ -17,12 +17,6 @@ public class MainActivity_Start extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main__start);
-        // get action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Welcome");
-
-        // Enabling Up / Back navigation
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
         ImageView imageView = (ImageView) findViewById(R.id.app_logo);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
@@ -53,13 +47,4 @@ public class MainActivity_Start extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
-        int id = item.getItemId();
-        if (id == android.R.id.home) {
-            finish();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
