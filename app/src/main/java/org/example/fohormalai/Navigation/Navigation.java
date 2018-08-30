@@ -18,11 +18,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import org.example.fohormalai.AboutUsActivity;
+import org.example.fohormalai.Login;
 import org.example.fohormalai.MainActivity_after_sign_in;
+import org.example.fohormalai.MapsActivity;
 import org.example.fohormalai.Models.Home;
 import org.example.fohormalai.R;
 import org.example.fohormalai.RecyclerViewAdapter;
 import org.example.fohormalai.ScheduleActivity;
+import org.example.fohormalai.SettingsActivity;
 import org.example.fohormalai.utils.ItemOffsetDecoration;
 
 public class Navigation extends AppCompatActivity
@@ -70,6 +73,7 @@ public class Navigation extends AppCompatActivity
                 }
             }
         });
+
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         ItemOffsetDecoration itemDecoration = new ItemOffsetDecoration(this, R.dimen.item_offset);
         recyclerView.addItemDecoration(itemDecoration);
@@ -121,7 +125,11 @@ public class Navigation extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+
+            Intent intent1 = new Intent(Navigation.this, SettingsActivity.class);
+            intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent1);
         }
 
         return super.onOptionsItemSelected(item);
@@ -133,17 +141,39 @@ public class Navigation extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_map) {
-            // Handle the camera action
-        } else if (id == R.id.nav_report) {
+        if (id == R.id.nav_map)
+        {
+            Intent in1 = new Intent(Navigation.this, MapsActivity.class);
+            in1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            in1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(in1);
+        }
 
-        } else if (id == R.id.nav_news) {
+        else if (id == R.id.nav_report)
+        {
 
-        } else if (id == R.id.nav_logout) {
+        }
 
-        } else if (id == R.id.nav_share) {
+        else if (id == R.id.nav_news)
+        {
 
-        } else if (id == R.id.nav_send) {
+        }
+
+        else if (id == R.id.nav_logout)
+        {
+            Intent in4 = new Intent(Navigation.this, Login.class);
+            in4.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            in4.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(in4);
+        }
+
+        else if (id == R.id.nav_share)
+        {
+
+        }
+
+        else if (id == R.id.nav_send)
+        {
 
         }
 
