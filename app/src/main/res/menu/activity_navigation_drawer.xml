@@ -29,9 +29,9 @@
                 android:icon="@drawable/ic_share_black_24dp"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_send_black_24dp"
-                android:title="Send" />
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contact_us"
+                android:title="Contact Us" />
         </menu>
     </item>
 

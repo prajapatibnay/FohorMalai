@@ -1,9 +1,11 @@
 package org.example.fohormalai.Navigation;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -172,8 +174,12 @@ public class Navigation extends AppCompatActivity
 
         }
 
-        else if (id == R.id.nav_send)
+        else if (id == R.id.nav_contact)
         {
+            FragmentManager fm = getSupportFragmentManager();
+            EditNameDialogFragment editNameDialogFragment = EditNameDialogFragment.newInstance("Some Title");
+            editNameDialogFragment.show(fm, "fragment_edit_name");
+
 
         }
 

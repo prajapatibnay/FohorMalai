@@ -20,6 +20,10 @@
     <string name="get_start">Get Started</string>
     <string name="new_user">I am new here</string>
     <string name="old_user">I have an account</string>
+    <string name="ntc">9849375019</string>
+    <string name="ncell">9808270885</string>
+    <string name="email1">clustered@gmail.com</string>
+
 
     <string-array name="State">
         <item>Select your State...</item>
