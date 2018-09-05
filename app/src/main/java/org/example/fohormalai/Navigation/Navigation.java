@@ -72,6 +72,10 @@ public class Navigation extends AppCompatActivity
                 }
 
                 if(item.getName().equalsIgnoreCase("Better Recycler")){
+                    String url = "https://www.google.com/search?q=be+a+better+recycler&uid=TOSHIBAXDT01ACA100_15DXGKVFSXX15DXGKVFSX&z=5dfcc827cfcd2922cbdbeb1g4z5t9o7z6g8g8m7gee&type=ds";
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
                 }
             }
         });
