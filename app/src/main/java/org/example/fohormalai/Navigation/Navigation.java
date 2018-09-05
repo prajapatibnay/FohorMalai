@@ -169,16 +169,18 @@ public class Navigation extends AppCompatActivity
             startActivity(in4);
         }
 
-        else if (id == R.id.nav_share)
+        else if (id == R.id.nav_follow)
         {
-
+            FragmentManager fm1 = getSupportFragmentManager();
+            FollowUsDialogFragment followUsDialogFragment = FollowUsDialogFragment.newInstance("Some Title");
+            followUsDialogFragment.show(fm1, "fragment_edit_name");
         }
 
         else if (id == R.id.nav_contact)
         {
-            FragmentManager fm = getSupportFragmentManager();
+            FragmentManager fm2 = getSupportFragmentManager();
             EditNameDialogFragment editNameDialogFragment = EditNameDialogFragment.newInstance("Some Title");
-            editNameDialogFragment.show(fm, "fragment_edit_name");
+            editNameDialogFragment.show(fm2, "fragment_edit_name");
 
 
         }
