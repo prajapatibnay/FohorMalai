@@ -25,6 +25,10 @@
     <string name="email1">clustered@gmail.com</string>
     <string name="facebook">Facebook</string>
     <string name="instagram">Instagram</string>
+    <string name="message">Type a message</string>
+    <string name="send">Send</string>
+    <string name="insert">Attach Image</string>
+    <string name="capture">Capture Image</string>
 
 
     <string-array name="State">

@@ -157,7 +157,10 @@ public class Navigation extends AppCompatActivity
 
         else if (id == R.id.nav_report)
         {
-
+            Intent in2 = new Intent(Navigation.this, ReportIssueActivity.class);
+            in2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            in2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(in2);
         }
 
         else if (id == R.id.nav_news)
