@@ -55,6 +55,8 @@ public class Navigation extends AppCompatActivity
 
                 }
                 if(item.getName().equalsIgnoreCase("Notification")){
+                    Intent in2=new Intent(Navigation.this,Notification.class);
+                    startActivity(in2);
 
                 }
 
